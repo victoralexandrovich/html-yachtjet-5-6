@@ -1,0 +1,83 @@
+.catalog-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.catalog-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fbfbfb;
+}
+
+.catalog-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.catalog-card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
+}
+
+.catalog-card-type {
+  font-size: 13px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #989899;
+}
+
+.catalog-specs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-specs-item {
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+
+.catalog-specs-label {
+  text-transform: uppercase;
+  color: #989899;
+}
+
+.catalog-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background-color: transparent;
+  border: 1px solid #fbfbfb;
+  cursor: pointer;
+}
+
+.catalog-btn:hover,
+.catalog-btn:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}

@@ -1,0 +1,32 @@
+.hero-title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.hero-text {
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  color: #b4b7ba;
+}
+
+.hero-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background-color: #1b414b;
+  border: none;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}

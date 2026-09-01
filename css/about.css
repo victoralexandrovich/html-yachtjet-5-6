@@ -1,0 +1,43 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  list-style: none;
+  margin: 0;
+  background-color: #1b414b;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-count {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.about-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #b4b7ba;
+}
+
+.about-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
