@@ -1,4 +1,19 @@
+.hero-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  background-image: url(../img/hero/hero-desk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {
+  max-width: 1001px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
   font-weight: 500;
   font-size: 80px;
   line-height: 1;
@@ -7,6 +22,10 @@
 }
 
 .hero-text {
+  max-width: 597px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
   font-weight: 300;
   line-height: 1.4;
   text-align: center;
@@ -14,15 +33,22 @@
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 40px;
+  min-width: 179px;
+  border-radius: 15px;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   background-color: #1b414b;
-  border: none;
-  padding: 16px 32px;
-  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,

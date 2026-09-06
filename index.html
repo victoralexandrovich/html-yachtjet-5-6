@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-container">
+      <div class="container header-container">
         <a class="header-logo" href="./index.html">yachtjet</a>
 
         <nav class="header-nav">
@@ -41,6 +41,32 @@
             </li>
           </ul>
         </nav>
+
+        <ul class="header-social-list">
+          <li class="header-social-item">
+            <a class="header-social-link" href="#">
+              <svg class="header-social-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="header-social-item">
+            <a class="header-social-link" href="#">
+              <svg class="header-social-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="header-social-item">
+            <a class="header-social-link" href="#">
+              <svg class="header-social-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -59,206 +85,274 @@
     </section>
 
     <section id="catalog" class="catalog-section">
-      <h2 class="catalog-title">
-        Choose your dream yacht and sail away into the sunset
-      </h2>
+      <div class="container">
+        <h2 class="catalog-title">
+          Choose your dream yacht and sail away into the sunset
+        </h2>
 
-      <ul class="catalog-list">
-        <li class="catalog-card">
-          <img src="./img/catalog/yaht-1.jpg" width="345" alt="Arrow" />
-          <h3 class="catalog-card-title">Arrow</h3>
-          <p class="catalog-card-type">LUXURY YAHTS</p>
+        <ul class="catalog-list">
+          <li class="catalog-card">
+            <img
+              class="catalog-card-img"
+              src="./img/catalog/yaht-1.jpg"
+              width="345"
+              alt="Arrow"
+            />
+            <div class="catalog-card-info">
+              <h3 class="catalog-card-title">Arrow</h3>
+              <p class="catalog-card-type">LUXURY YAHTS</p>
+            </div>
 
-          <ul class="catalog-specs-list">
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">LENGTH</span> 48m(155ft)
-            </li>
+            <ul class="catalog-specs-list">
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">LENGTH</span> 48m(155ft)
+              </li>
 
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">BUILDER</span> Admiral
-            </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">BUILDER</span> Admiral
+              </li>
 
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">BUILT</span> 2021
-            </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">BUILT</span> 2021
+              </li>
 
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">GUESTS</span> 11 in 5 cabins
-            </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">GUESTS</span> 11 in 5 cabins
+              </li>
 
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">PRICE</span> €33,500,000
-            </li>
-          </ul>
-        </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">PRICE</span> €33,500,000
+              </li>
+            </ul>
+          </li>
 
-        <li class="catalog-card">
-          <img
-            src="./img/catalog/yaht-2.jpg"
-            width="345"
-            alt="BENETTI OASIS 40"
-          />
-          <h3 class="catalog-card-title">BENETTI OASIS 40</h3>
-          <p class="catalog-card-type">LUXURY YAHTS</p>
+          <li class="catalog-card">
+            <img
+              class="catalog-card-img"
+              src="./img/catalog/yaht-2.jpg"
+              width="345"
+              alt="BENETTI OASIS 40"
+            />
+            <div class="catalog-card-info">
+              <h3 class="catalog-card-title">BENETTI OASIS 40</h3>
+              <p class="catalog-card-type">LUXURY YAHTS</p>
+            </div>
 
-          <ul class="catalog-specs-list">
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">LENGTH</span> 41m (133ft)
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">BUILDER</span> Benetti
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">BUILT</span> 2025
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">GUESTS</span> 10 in 5 cabins
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">PRICE</span> €23,210,000
-            </li>
-          </ul>
-        </li>
+            <ul class="catalog-specs-list">
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">LENGTH</span> 41m (133ft)
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">BUILDER</span> Benetti
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">BUILT</span> 2025
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">GUESTS</span> 10 in 5 cabins
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">PRICE</span> €23,210,000
+              </li>
+            </ul>
+          </li>
 
-        <li class="catalog-card">
-          <img src="./img/catalog/yaht-3.jpg" width="345" alt="BELLE ANNA" />
-          <h3 class="catalog-card-title">BELLE ANNA</h3>
-          <p class="catalog-card-type">LUXURY YAHTS</p>
+          <li class="catalog-card">
+            <img
+              class="catalog-card-img"
+              src="./img/catalog/yaht-3.jpg"
+              width="345"
+              alt="BELLE ANNA"
+            />
 
-          <ul class="catalog-specs-list">
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">LENGTH</span> 50m(155ft)
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">BUILDER</span> ISA
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">BUILT</span> 2012
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">GUESTS</span> 12 in 6 cabins
-            </li>
-            <li class="catalog-specs-item">
-              <span class="catalog-specs-label">PRICE</span> €21,000,000
-            </li>
-          </ul>
-        </li>
-      </ul>
+            <div class="catalog-card-info">
+              <h3 class="catalog-card-title">BELLE ANNA</h3>
+              <p class="catalog-card-type">LUXURY YAHTS</p>
+            </div>
 
-      <button class="catalog-btn" type="button">Yacht rental</button>
+            <ul class="catalog-specs-list">
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">LENGTH</span> 50m(155ft)
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">BUILDER</span> ISA
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">BUILT</span> 2012
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">GUESTS</span> 12 in 6 cabins
+              </li>
+              <li class="catalog-specs-item">
+                <span class="catalog-specs-label">PRICE</span> €21,000,000
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button class="catalog-btn" type="button">Yacht rental</button>
+      </div>
     </section>
 
     <section id="about" class="about-section">
-      <h2 class="visually-hidden">About</h2>
+      <div class="container about-container">
+        <ol class="about-list">
+          <li class="about-item">
+            <span class="about-count">01</span>
+            <p class="about-text">
+              Swimming and water sports: try your hand at water skiing
+            </p>
+          </li>
 
-      <ol class="about-list">
-        <li class="about-item">
-          <span class="about-count">01</span>
-          <p class="about-text">
-            Swimming and water sports: try your hand at water skiing
-          </p>
-        </li>
+          <li class="about-item">
+            <span class="about-count">02</span>
+            <p class="about-text">Fishing: try to catch your own dinner</p>
+          </li>
 
-        <li class="about-item">
-          <span class="about-count">02</span>
-          <p class="about-text">Fishing: try to catch your own dinner</p>
-        </li>
+          <li class="about-item">
+            <span class="about-count">03</span>
+            <p class="about-text">
+              Sightseeing tours: take a shore or island tour, enjoy the views
+              and sunsets from the water
+            </p>
+          </li>
 
-        <li class="about-item">
-          <span class="about-count">03</span>
-          <p class="about-text">
-            Sightseeing tours: take a shore or island tour, enjoy the views and
-            sunsets from the water
-          </p>
-        </li>
+          <li class="about-item">
+            <span class="about-count">04</span>
+            <p class="about-text">
+              Rest and relaxation: read a book or listen to music while enjoying
+              the outdoor atmosphere.
+            </p>
+          </li>
+        </ol>
 
-        <li class="about-item">
-          <span class="about-count">04</span>
-          <p class="about-text">
-            Rest and relaxation: read a book or listen to music while enjoying
-            the outdoor atmosphere.
-          </p>
-        </li>
-      </ol>
-
-      <img src="./img/about/about-desk.jpg" alt="about" width="432" />
+        <div class="about-img-wrapper">
+          <img
+            class="about-img"
+            src="./img/about/about-desk.jpg"
+            alt="about"
+            width="432"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="reviews" class="reviews-section">
-      <h2 class="reviews-title">
-        YachtJet take pride in providing the best possible service and
-        experience to our customers
-      </h2>
-      <p class="reviews-subtitle">
-        Our customers have enjoyed unforgettable moments on our yachts. Don't
-        just take our word for it - read on to find out what they have to say
-        about their journey with us.
-      </p>
+      <div class="container">
+        <h2 class="reviews-title">
+          YachtJet take pride in providing the best possible service and
+          experience to our customers
+        </h2>
+        <p class="reviews-subtitle">
+          Our customers have enjoyed unforgettable moments on our yachts. Don't
+          just take our word for it - read on to find out what they have to say
+          about their journey with us.
+        </p>
 
-      <ul class="reviews-cards-list">
-        <li class="review-card">
-          <img src="./img/reviews/review-1.jpg" alt="John Wax" width="56" />
-          <h3 class="review-card-name">John Wax</h3>
-          <p class="review-card-text">
-            I rented the Lagoon 620 with my family for a week-long vacation and
-            it was the best decision ever. The yacht was spacious, comfortable,
-            and luxurious, and the crew took care of everything.
-          </p>
-        </li>
+        <ul class="reviews-cards-list">
+          <li class="review-card">
+            <img
+              class="review-card-img"
+              src="./img/reviews/review-1.jpg"
+              alt="John Wax"
+              width="56"
+            />
+            <h3 class="review-card-name">John Wax</h3>
+            <p class="review-card-text">
+              I rented the Lagoon 620 with my family for a week-long vacation
+              and it was the best decision ever. The yacht was spacious,
+              comfortable, and luxurious, and the crew took care of everything.
+            </p>
+          </li>
 
-        <li class="review-card">
-          <img
-            src="./img/reviews/review-2.jpg"
-            alt="Victoria Romashenko"
-            width="56"
-          />
-          <h3 class="review-card-name">Victoria Romashenko</h3>
-          <p class="review-card-text">
-            The Sunseeker Manhattan 66 was the perfect choice for our romantic
-            getaway. The yacht was beautifully designed, with all the amenities
-            we needed, and the crew was attentive and friendly.
-          </p>
-        </li>
+          <li class="review-card">
+            <img
+              class="review-card-img"
+              src="./img/reviews/review-2.jpg"
+              alt="Victoria Romashenko"
+              width="56"
+            />
+            <h3 class="review-card-name">Victoria Romashenko</h3>
+            <p class="review-card-text">
+              The Sunseeker Manhattan 66 was the perfect choice for our romantic
+              getaway. The yacht was beautifully designed, with all the
+              amenities we needed, and the crew was attentive and friendly.
+            </p>
+          </li>
 
-        <li class="review-card">
-          <img src="./img/reviews/review-3.jpg" alt="Ihor Trachuk" width="56" />
-          <h3 class="review-card-name">Ihor Trachuk</h3>
-          <p class="review-card-text">
-            The Azimut 80 was the most luxurious yacht I've ever been on. The
-            cabins were spacious and elegant, and the outdoor areas were perfect
-            for relaxing and entertaining. Worth every penny!
-          </p>
-        </li>
-      </ul>
+          <li class="review-card">
+            <img
+              class="review-card-img"
+              src="./img/reviews/review-3.jpg"
+              alt="Ihor Trachuk"
+              width="56"
+            />
+            <h3 class="review-card-name">Ihor Trachuk</h3>
+            <p class="review-card-text">
+              The Azimut 80 was the most luxurious yacht I've ever been on. The
+              cabins were spacious and elegant, and the outdoor areas were
+              perfect for relaxing and entertaining. Worth every penny!
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer class="page-footer">
-      <div class="footer-top">
-        <a class="footer-logo" href="./index.html">yachtjet</a>
+      <div class="container">
+        <div class="footer-top">
+          <a class="footer-logo" href="./index.html">yachtjet</a>
 
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <a href="#about" class="footer-nav-link">About</a>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a href="#about" class="footer-nav-link">About</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#catalog" class="footer-nav-link">Yachts</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#reviews" class="footer-nav-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#catalog" class="footer-nav-link">Yachts</a>
+
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-nav-item">
-              <a href="#reviews" class="footer-nav-link">Reviews</a>
+
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="#">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
 
-      <p class="footer-text">
-        No matter which yacht you choose, our experienced crew will ensure that
-        your journey is smooth and enjoyable.
-      </p>
+        <p class="footer-text">
+          No matter which yacht you choose, our experienced crew will ensure
+          that your journey is smooth and enjoyable.
+        </p>
 
-      <div class="footer-bottom">
-        <p class="footer-copyright">2023. Yacht Adventures</p>
-        <a class="footer-privacy" href="#">Privacy Police</a>
+        <div class="footer-bottom">
+          <p class="footer-copyright">2023. Yacht Adventures</p>
+          <a class="footer-privacy" href="#">Privacy Police</a>
+        </div>
       </div>
     </footer>
   </body>

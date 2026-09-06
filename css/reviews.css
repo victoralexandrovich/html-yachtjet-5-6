@@ -1,4 +1,13 @@
+.reviews-section {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
 .reviews-title {
+  max-width: 854px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
   font-weight: 500;
   font-size: 48px;
   line-height: 1;
@@ -7,6 +16,10 @@
 }
 
 .reviews-subtitle {
+  max-width: 571px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
@@ -16,7 +29,6 @@
 
 .reviews-cards-list {
   display: flex;
-  gap: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -26,18 +38,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 32px;
+  width: 376px;
+  padding: 32px 28px;
+  margin-left: 22px;
+  border-radius: 24px;
+  box-sizing: border-box;
+
   background-color: #fbfbfb;
 }
 
-.review-card img {
+.review-card-img {
   display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
   border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .review-card-name {
-  margin: 0;
+  margin: 0 0 8px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1;
