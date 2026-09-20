@@ -67,6 +67,66 @@
             </a>
           </li>
         </ul>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="28" height="28">
+            <use href="./img/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="container mobile-container">
+          <div class="mobile-menu-top">
+            <a class="header-logo" href="./index.html">yachtjet</a>
+
+            <button class="mobile-close-btn" type="button">
+              <svg class="mobile-close-icon" width="28" height="28">
+                <use href="./img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a href="#about" class="mobile-nav-link">About</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="#catalog" class="mobile-nav-link">Yachts</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="#reviews" class="mobile-nav-link">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="#">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -95,6 +155,10 @@
             <img
               class="catalog-card-img"
               src="./img/catalog/yaht-1.jpg"
+              srcset="
+                ./img/catalog/yaht-1.jpg    1x,
+                ./img/catalog/yaht-1@2x.jpg 2x
+              "
               width="345"
               alt="Arrow"
             />
@@ -130,6 +194,10 @@
             <img
               class="catalog-card-img"
               src="./img/catalog/yaht-2.jpg"
+              srcset="
+                ./img/catalog/yaht-2.jpg    1x,
+                ./img/catalog/yaht-2@2x.jpg 2x
+              "
               width="345"
               alt="BENETTI OASIS 40"
             />
@@ -161,6 +229,10 @@
             <img
               class="catalog-card-img"
               src="./img/catalog/yaht-3.jpg"
+              srcset="
+                ./img/catalog/yaht-3.jpg    1x,
+                ./img/catalog/yaht-3@2x.jpg 2x
+              "
               width="345"
               alt="BELLE ANNA"
             />
@@ -227,12 +299,28 @@
         </ol>
 
         <div class="about-img-wrapper">
-          <img
-            class="about-img"
-            src="./img/about/about-desk.jpg"
-            alt="about"
-            width="432"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/about/about-desk.jpg    1x,
+                ./img/about/about-desk@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/about/about-tab.jpg    1x,
+                ./img/about/about-tab@2x.jpg 2x
+              "
+            />
+            <img
+              class="about-img"
+              src="./img/about/about-desk.jpg"
+              alt="about"
+              width="432"
+            />
+          </picture>
         </div>
       </div>
     </section>
@@ -355,5 +443,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

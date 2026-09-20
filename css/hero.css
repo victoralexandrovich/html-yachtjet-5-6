@@ -1,33 +1,33 @@
+/* Мобільні стилі */
 .hero-section {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 250px;
-  padding-bottom: 200px;
-  background-image: url(../img/hero/hero-desk.jpg);
+  padding-top: 260px;
+  padding-bottom: 280px;
+  background-image: image-set(
+    url(../img/hero/hero-desk.jpg) 1x,
+    url(../img/hero/hero-desk@2x.jpg) 2x
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .hero-title {
-  max-width: 1001px;
-  margin: 0 auto;
   margin-bottom: 24px;
-
   font-weight: 500;
-  font-size: 80px;
+  font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
 }
 
 .hero-text {
-  max-width: 597px;
-  margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 
   font-weight: 300;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.16667;
   text-align: center;
   color: #b4b7ba;
 }
@@ -35,13 +35,13 @@
 .hero-button {
   display: block;
   margin: 0 auto;
-  padding: 16px 40px;
-  min-width: 179px;
+  padding: 14px 32px;
+  min-width: 141px;
   border-radius: 15px;
 
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
+  font-size: 14px;
+  line-height: 1.28571;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   background-color: #1b414b;
@@ -55,4 +55,48 @@
 .hero-button:focus {
   color: #1b414b;
   background-color: #fbfbfb;
+}
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 220px;
+    padding-bottom: 180px;
+  }
+
+  .hero-title {
+    font-size: 70px;
+  }
+
+  .hero-text {
+    max-width: 597px;
+    margin: 0 auto 48px;
+
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .hero-button {
+    padding: 16px 40px;
+    min-width: 179px;
+
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+/* Десктопні стилі */
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 250px;
+    padding-bottom: 200px;
+  }
+
+  .hero-title {
+    max-width: 1001px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 80px;
+  }
 }

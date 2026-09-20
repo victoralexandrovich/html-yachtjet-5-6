@@ -1,15 +1,14 @@
+/* Мобільні стилі */
 .catalog-section {
-  padding-top: 150px;
-  padding-bottom: 75px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .catalog-title {
-  max-width: 713px;
-  margin: 0 auto;
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 
   font-weight: 500;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
@@ -18,27 +17,35 @@
 .catalog-list {
   display: flex;
   gap: 25px;
-  margin: 0 auto 50px;
-  padding: 17px;
-  box-sizing: border-box;
+  max-width: 336px;
+  margin: 0 auto 40px;
+  padding: 0;
   list-style: none;
 }
 
 .catalog-card {
-  width: 377px;
-  height: 508px;
+  width: 336px;
+  flex-shrink: 0;
   padding: 16px 16px 32px;
   border-radius: 24px;
+  box-sizing: border-box;
   background-color: #fbfbfb;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-card:nth-last-child(-n + 2) {
+    display: none;
+  }
 }
 
 .catalog-card-img {
   display: block;
-  width: 345px;
+  width: 100%;
   height: 268px;
-  object-fit: cover;
   border-radius: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
+  object-fit: cover;
+  object-position: left;
 }
 
 .catalog-card-info {
@@ -46,22 +53,22 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   border-bottom: 1px solid rgba(4, 3, 6, 0.1);
 }
 
 .catalog-card-title {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.18;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #1b414b;
 }
 
 .catalog-card-type {
-  font-size: 13px;
-  line-height: 1.18;
+  font-size: 12px;
+  line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #989899;
@@ -94,15 +101,15 @@
 
 .catalog-btn {
   display: block;
-  min-width: 179px;
+  min-width: 141px;
   margin: 0 auto;
-  padding: 16px 40px;
+  padding: 14px 32px;
   border: 1px solid rgba(251, 251, 251, 0.35);
   border-radius: 15px;
 
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
+  font-size: 14px;
+  line-height: 1.28571;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   background-color: transparent;
@@ -118,4 +125,74 @@
   color: #1b414b;
   background-color: #fbfbfb;
   border-color: transparent;
+}
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .catalog-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .catalog-title {
+    max-width: 645px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+
+    font-size: 48px;
+  }
+
+  .catalog-list {
+    max-width: 704px;
+    gap: 32px;
+  }
+
+  .catalog-card {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .catalog-card-title {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .catalog-card-type {
+    font-size: 13px;
+    line-height: 1.18;
+  }
+
+  .catalog-btn {
+    min-width: 179px;
+    padding: 16px 40px;
+
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .catalog-card:nth-last-child(-n + 1) {
+    display: none;
+  }
+}
+
+/* Десктопні стилі */
+@media screen and (min-width: 1280px) {
+  .catalog-section {
+    padding-top: 150px;
+    padding-bottom: 75px;
+  }
+
+  .catalog-title {
+    max-width: 713px;
+  }
+
+  .catalog-list {
+    max-width: none;
+    gap: 25px;
+  }
+
+  .catalog-card {
+    width: calc((100% - 2 * 25px) / 3);
+  }
 }

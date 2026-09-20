@@ -1,20 +1,12 @@
-.about-section {
-  padding: 75px 0;
-}
-
 .about-container {
   display: flex;
   gap: 32px;
-  width: 1180px;
-  margin: 0 auto;
 }
 
 .about-list {
   display: flex;
   flex-wrap: wrap;
   gap: 44px;
-  width: 716px;
-  height: 424px;
   padding: 90px 50px;
   border-radius: 24px;
   list-style: none;
@@ -22,10 +14,6 @@
   box-sizing: border-box;
 
   background-color: #1b414b;
-}
-
-.about-item {
-  width: calc((100% - 44px) / 2);
 }
 
 .about-count {
@@ -62,8 +50,6 @@
 }
 
 .about-img-wrapper {
-  width: 432px;
-  height: 424px;
   border-radius: 24px;
   overflow: hidden;
   flex-shrink: 0;
@@ -75,4 +61,82 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* Мобільна версія */
+@media screen and (min-width: 390px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .about-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 40px;
+    width: 335px;
+    height: 642px;
+    padding: 80px 24px;
+  }
+
+  .about-item {
+    width: 100%;
+  }
+
+  .about-img-wrapper {
+    width: 335px;
+    height: 424px;
+  }
+}
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 716px;
+    height: 424px;
+  }
+
+  .about-item {
+    width: calc((100% - 44px) / 2);
+  }
+
+  .about-img-wrapper {
+    width: 716px;
+    height: 424px;
+  }
+}
+
+/* Десктопні стилі */
+@media screen and (min-width: 1280px) {
+  .about-container {
+    flex-direction: row;
+    width: 1180px;
+    margin: 0 auto;
+    gap: 32px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 716px;
+    height: 424px;
+  }
+
+  .about-item {
+    width: calc((100% - 44px) / 2);
+  }
+
+  .about-img-wrapper {
+    width: 432px;
+    height: 424px;
+  }
 }

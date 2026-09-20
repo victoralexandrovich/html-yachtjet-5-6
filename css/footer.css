@@ -121,3 +121,50 @@
 .footer-privacy:focus {
   color: #fbfbfb;
 }
+
+/* Планшетні стилі */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-text {
+    max-width: 560px;
+  }
+}
+/* Мобільна версія */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .footer-top {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+  }
+
+  .footer-nav-link {
+    min-width: 70px;
+    padding: 10px 16px;
+  }
+
+  .footer-social-list {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-text {
+    max-width: 335px;
+    margin: 0 auto 48px;
+
+    font-size: 20px;
+  }
+
+  .footer-bottom {
+    gap: 16px;
+  }
+
+  .footer-copyright,
+  .footer-privacy {
+    font-size: 12px;
+  }
+}
